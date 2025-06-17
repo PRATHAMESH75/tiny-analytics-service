@@ -1,0 +1,11 @@
+
+env_name: CartPole-v1
+total_timesteps: 10000
+algorithms:
+  - name: PPO
+    params: {}
+  - name: DQN
+    params: {}
+  - name: A2C
+    params: {}
+evaluation_episodes: 5
