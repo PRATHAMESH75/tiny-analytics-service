@@ -1,0 +1,12 @@
+sites:
+  site-1:
+    api_key: dev-site-1-key
+    hmac_secret: ""
+  site-2:
+    api_key: dev-site-2-key
+    hmac_secret: ""
+  site-3:
+    api_key: dev-site-3-key
+    hmac_secret: ""
+
+

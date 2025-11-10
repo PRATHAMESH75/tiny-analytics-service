@@ -1,0 +1,3 @@
+./batcher_test.go
+./enrich_test.go
+./hmac_test.go

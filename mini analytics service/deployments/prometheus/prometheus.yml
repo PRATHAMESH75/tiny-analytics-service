@@ -1,0 +1,21 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: ingest-api
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["host.docker.internal:8080"]
+  - job_name: query-api
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["host.docker.internal:8081"]
+  - job_name: enricher
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["host.docker.internal:9100"]
+  - job_name: loader
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["host.docker.internal:9101"]
